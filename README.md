@@ -17,6 +17,8 @@ var pipeline = new MarkdownPipelineBuilder()
   .Build();
 ```
 
+For an overview on how to build Markdig extensions using this library as an example, see the "[Writing custom Markdig extensions](https://www.cyotek.com/blog/writing-custom-markdig-extensions)" article on the cyotek blog.
+
 Authors
 -------
 
