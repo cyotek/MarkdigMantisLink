@@ -57,13 +57,13 @@ namespace MarkdigMantisLink
           current = slice.NextChar();
         }
 
-        // once we've ran out of digits, check to see what the next character it is
-        // to make sure this is a valid issue and nothing somethign random like #001Alpha
+        // once we've ran out of digits, check to see what the next character is
+        // to make sure this is a valid issue and nothing something random like #001Alpha
         if (current.IsWhiteSpaceOrZero() || current == ')' || current == ']')
         {
           int inlineStart;
 
-          inlineStart = processor.GetSourcePosition(slice.Start + 1, out int line, out int column); // include +1 to the start to account for our # character
+          inlineStart = processor.GetSourcePosition(slice.Start, out int line, out int column); 
 
           // and if we got here, then we've got a valid reference, so create our AST node
           // and assign it to the processor
