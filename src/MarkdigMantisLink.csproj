@@ -23,7 +23,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="markdig" Version="0.12.4" />
+    <PackageReference Include="markdig" Version="0.22.0" />
   </ItemGroup>
 
 </Project>
